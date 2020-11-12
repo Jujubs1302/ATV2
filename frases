@@ -1,0 +1,4 @@
+t = str(input('Digite uma frase:'))
+print ('Você digitou: ',t)
+string = t[::-1]
+print('Sua frase com as letras invertidas formam: %s'%(string))
