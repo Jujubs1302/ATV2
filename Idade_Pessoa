@@ -1,0 +1,5 @@
+dias = int(input('Digite a sua idade em dias: '))
+ano = dias//360
+meses = (dias % 360)//30
+dia = ( dias % 360)%30
+print ('Voce tem', dia, 'Dias,', meses, 'meses e', ano, 'anos')
