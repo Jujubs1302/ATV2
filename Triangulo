@@ -1,0 +1,12 @@
+import math
+a = int (input('Digite o lado A: '))
+b = int (input('Digite o lado B: '))
+c = int (input('Digite o lado C: '))
+
+if a < b + c and b < a + c and c < a + b:
+    print('Esse triângulo é válido!')
+    #LEVANDO EM CONSIDERAÇÃO A FÓRMULA DO TRIÂNGULO EQUILÁTERO!!
+    h = (a*math.sqrt(3)/2)
+    print ('A área desse triângulo corresponde a: %.2f' %(h))
+else:
+    print ('Triângulo inválido! Os valores %d, %d e %d não correspondem para um triângulo válido!'%(a,b,c))
