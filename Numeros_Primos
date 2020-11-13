@@ -1,0 +1,19 @@
+lim = 100
+num = 1
+cont = 1
+primo = 0
+
+print('Numeros primos de 1 a 100: ')
+
+while num < lim:
+    i = num - 1
+    while i > 1:
+        if num % i == 0: break    
+        i -= 1
+        cont += 1
+    else:
+        print (num)    
+        primo += 1    
+    num += 1
+print('\nForam encontrados no total de %d números primos.' %(primo))
+print('Foram realizadas %d comparações.' %(cont))
